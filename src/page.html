@@ -1,0 +1,19 @@
+<!-- public/another-page.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Another Page</title>
+    <link rel="stylesheet" href="/src/styles/tailwind.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <div id="app"></div>
+    <script type="module">
+      import AnotherPage from "../src/AnotherPage.svelte";
+      const app = new AnotherPage({
+        target: document.getElementById("app"),
+      });
+    </script>
+  </body>
+</html>
